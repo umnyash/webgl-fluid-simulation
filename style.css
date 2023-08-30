@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+}
+
+.header,
+.about {
+  padding: 20px;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.hero__title {
+  max-width: 80%;
+  font-size: 40px;
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__canvas {
+  max-width: 100%;
+  height: auto;
+  grid-area: 1 / 1 / 2 / 2;
+  place-self: stretch;
+}
